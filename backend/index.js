@@ -14,7 +14,8 @@ const PORT = process.env.PORT || 3000;
 const __dirname = path.resolve()
 
 // Connect to MongoDB
-app.use(cors({ origin: "http://localhost:5173", credentials: true, methods: ['GET', 'POST'] }));
+app.use(cors({ origin: "https://e-commerce-gray-one-22.vercel.app", credentials: true, methods: ['GET', 'POST'] }));
+// app.use(cors({ origin: "http://localhost:5173", credentials: true, methods: ['GET', 'POST'] }));
 
 app.use(express.json()) // allows us to parse incoming requests: req.body 
 app.use(cookieParser()) // allows us to parse cookies from request body and pass them through to server
